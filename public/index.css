@@ -1,0 +1,272 @@
+:root
+{
+    --brand-color: #3A3C75;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+section
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+img
+{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.container
+{
+    max-width: 95%;
+    margin: auto;
+}
+
+.text--brand { color: var(--brand-color, #3A3C75); }
+.text--white { color: white; } 
+.text--center { text-align: center; }
+.text--bold { font-weight: 700; } 
+
+.partner__list
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partner__item
+{
+    max-width: 170px;
+}
+
+.what-we-do
+{
+    border-bottom: 2px solid var(--brand-color, #3A3C75);
+}
+
+.section-heading
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+
+.brand-button
+{
+    color: white;
+    background-color: var(--brand-color, #3A3C75);
+    padding: 3px 8px;
+}
+
+.secondary-button
+{
+    background-color: white;
+    color: var(--brand-color, #3A3C75);
+    border: 2px solid var(--brand-color, #3A3C75);
+    padding: 3px 8px;
+}
+
+.brand-button:hover,
+.secondary-button:hover
+{
+    filter: brightness(80%);
+}
+
+.project__previews
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.project__preview
+{
+    box-shadow: 1px 1px 5px #e2d3d3;
+    padding-bottom: 10px;
+}
+
+.project__preview-content > *+*
+{
+    margin-bottom: 5px;
+}
+
+.iso-standard
+{
+    background-color: var(--brand-color, #3A3C75);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.iso-standard__holder
+{
+    display: flex;
+    align-items: center;
+}
+
+.iso-standard__list
+{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: auto;
+    color: white;
+    font-weight: 700;
+}
+
+.iso-standard__item
+{
+    background-color: white;
+    padding: 10px;
+    color: black;
+    font-weight: bolder;
+}
+
+.mechanization__list
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.mechanization__see-all
+{
+    background-color: var(--brand-color, #3A3C75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mechanization__see-all-link
+{
+    color: white;
+    font-size: 30px;
+}
+
+.separator
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.contact-us-heading
+{
+    text-align: center;
+    font-size: 50px;
+    color: var(--brand-color, #3A3C75);
+}
+
+.contact__list
+{
+    border-right: 10px solid var(--brand-color, #3A3C75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__item
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label
+{
+    font-weight: bold;
+}
+
+.form-field
+{
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    border: none;
+    background-color: #e7e7eb;
+}
+
+.contact-form button[type='submit'].brand-button
+{
+    margin-top: 10px;
+}
+
+footer.footer
+{
+    background-color: var(--brand-color, #3A3C75);
+    color: white;
+}
+
+.footer-content
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer__links
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__item
+{
+    margin-right: 10px;
+}
+
+.footer__link
+{
+    color: white;
+    font-size: 14px;
+}
+
+.footer .logo-holder
+{
+    background-color: white;
+    width: 185px;
+}
+
+.logo-image
+{
+    --edge-size: 36px;
+    width: var(--edge-size, 36px);
+    height: var(--edge-size, 36px);
+    float: left;
+}
+
+.footer__link:hover
+{
+    filter: brightness(75%);    
+}
+
+.what-we-do__list
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.what-we-do__item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-we-do__item > .image-container
+{
+    align-self: center;
+}
