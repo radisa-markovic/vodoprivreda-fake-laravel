@@ -1,14 +1,18 @@
-<?php 
+<?php
+
+use Core\Projects; 
+use Core\Mechanization; 
 
 require 'functions.php';
 
     /**==> won't work without setting base path to this via CLI */
 const BASE_PATH = __DIR__ . '/../';
-// spl_autoload_register(function ($class) {
-//     $class = str_replace('\\', DIRECTORY_SEPARATOR, $class);
+spl_autoload_register(function ($class) {
+    // $class = str_replace('\\', DIRECTORY_SEPARATOR, $class);
 
-//     require base_path("{$class}.php");
-// });
+    // require base_path("{$class}.php");
+    require ("{$class}.php");
+});
 
 //php -S localhost:80 -t public
 
@@ -18,11 +22,18 @@ $currentRoute = parse_url($_SERVER['REQUEST_URI'])['path'];
 switch($currentRoute)
 {
     case $routes['home']['url']:
+        $projects = Projects::getNProjects(4);
         require './views/home.view.php';
         break;
         
     case $routes['projects']['url']:
-        require './views/projekti.view.php';
+        $projects = Projects::getProjects();
+        require './views/projects.view.php';
+        break;
+
+    case $routes['mechanization']['url']:
+        $mechanization = Mechanization::getMechanization();
+        require './views/mechanization.view.php';
         break;
 
     default:

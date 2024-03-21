@@ -41,17 +41,24 @@ button
         <?php require ('partials/Navigation.php'); ?>    
         <div style="display:flex; margin-top: 30px;">
             <div class="cta-and-description">
-                <h1 style="max-width: 22ch;">
+                <h1 class="main-title"max-width: 22ch;">
                     Zaštita od vode, 
                     izgradnja i održavanje
                     vodoprivrednih objekata
                 </h1>
-                <p>Već 70 godina sa vama.</p>
+                <p class="secondary-title">
+                    Već 70 godina sa vama.
+                </p>
                 <div>
-                    <button style="background-color: #3A3C75; color: white; padding: 5px;">
+                    <button 
+                        class="brand-button cta-button" 
+                        style="margin-right: 25px;"
+                    >
                         Angažuj nas!
                     </button>
-                    <button style="background-color: white; color: #3A3C75; border: 2px solid #3A3C75; padding: 4px;">
+                    <button
+                        class="secondary-button cta-button" 
+                    >
                         Naši projekti
                     </button>
                 </div>
@@ -120,80 +127,11 @@ button
                 Pogledaj sve
             </a>
         </div>
-        <div class="project__previews">
-            <!--=== SINGLE PROJECT PREVIEW ===-->
-            <article class="project__preview container">
-                <div class="image-container">
-                    <img 
-                        src="../images/projects/SvojnovoParacin.jpg" 
-                        alt=""
-                    />
-                </div>
-                <div class="project__preview-content container">
-                    <p class="text--brand">Svojnovo, Paraćin</p>
-                    <h3>
-                        Regulacija toka korita Velike Morave
-                    </h3>
-                    <a href="#" class="secondary-button">
-                        Pogledaj više
-                    </a>
-                </div>
-            </article>  
-            <!--=== SINGLE PROJECT PREVIEW ===-->
-            <article class="project__preview container">
-                <div class="image-container">
-                    <img 
-                        src="../images/projects/SvojnovoParacin.jpg" 
-                        alt=""
-                    />
-                </div>
-                <div class="project__preview-content container">
-                    <p class="text--brand">Svojnovo, Paraćin</p>
-                    <h3>
-                        Regulacija toka korita Velike Morave
-                    </h3>
-                    <a href="#" class="secondary-button">
-                        Pogledaj više
-                    </a>
-                </div>
-            </article>  
-            <!--=== SINGLE PROJECT PREVIEW ===-->
-            <article class="project__preview container">
-                <div class="image-container">
-                    <img 
-                        src="../images/projects/SvojnovoParacin.jpg" 
-                        alt=""
-                    />
-                </div>
-                <div class="project__preview-content container">
-                    <p class="text--brand">Svojnovo, Paraćin</p>
-                    <h3>
-                        Regulacija toka korita Velike Morave
-                    </h3>
-                    <a href="#" class="secondary-button">
-                        Pogledaj više
-                    </a>
-                </div>
-            </article>  
-            <!--=== SINGLE PROJECT PREVIEW ===-->
-            <article class="project__preview container">
-                <div class="image-container">
-                    <img 
-                        src="../images/projects/SvojnovoParacin.jpg" 
-                        alt=""
-                    />
-                </div>
-                <div class="project__preview-content container">
-                    <p class="text--brand">Svojnovo, Paraćin</p>
-                    <h3>
-                        Regulacija toka korita Velike Morave
-                    </h3>
-                    <a href="#" class="secondary-button">
-                        Pogledaj više
-                    </a>
-                </div>
-            </article>  
-        </div>  
+        <section class="project__previews">
+            <?php foreach($projects as $project): ?>
+                <?php include ('partials/projectPreview.php'); ?>
+            <?php endforeach; ?>
+        </section>  
     </section>
 
     <!-- ISO Standards -->

@@ -24,7 +24,7 @@ img
 
 .container
 {
-    max-width: 95%;
+    max-width: 90%;
     margin: auto;
 }
 
@@ -42,7 +42,7 @@ img
 
 .partner__item
 {
-    max-width: 170px;
+    max-width: 330px;
 }
 
 .what-we-do
@@ -180,6 +180,7 @@ img
 {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .contact-form label
@@ -200,12 +201,18 @@ img
 .contact-form button[type='submit'].brand-button
 {
     margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    align-self: baseline;
+    padding: 5px 20px;
 }
 
 footer.footer
 {
     background-color: var(--brand-color, #3A3C75);
     color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .footer-content
@@ -262,11 +269,42 @@ footer.footer
 .what-we-do__item
 {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 .what-we-do__item > .image-container
 {
     align-self: center;
+}
+
+.main-title
+{
+    max-width: 22ch;
+    font-size: 55px;
+}
+
+.secondary-title
+{
+    font-size: 25px;
+}
+
+.cta-button
+{
+    font-size: 20px;
+    padding: 10px 15px;
+}
+
+.cta-and-description > *+*
+{
+    margin-top: 10px;
+}
+
+.footer .links
+{
+    justify-self: center;
+}
+
+.footer .work-hours
+{
+    justify-self: end;
 }

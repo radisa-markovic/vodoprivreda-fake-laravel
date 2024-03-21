@@ -18,7 +18,7 @@
     {
         text-decoration: none;
         color: black;
-        font-size: 16px;
+        font-size: 20px;
         padding: 5px;
     }
 
