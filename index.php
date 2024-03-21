@@ -2,6 +2,7 @@
 
 use Core\Projects; 
 use Core\Mechanization; 
+use Core\Management;
 
 require 'functions.php';
 
@@ -23,6 +24,7 @@ switch($currentRoute)
 {
     case $routes['home']['url']:
         $projects = Projects::getNProjects(4);
+        $mechanization = Mechanization::getNMechanization(3);
         require './views/home.view.php';
         break;
         
@@ -34,6 +36,11 @@ switch($currentRoute)
     case $routes['mechanization']['url']:
         $mechanization = Mechanization::getMechanization();
         require './views/mechanization.view.php';
+        break;
+
+    case $routes['aboutUs']['url']:
+        $management = Management::getManagement();
+        require './views/aboutUs.view.php';
         break;
 
     default:

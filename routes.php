@@ -16,5 +16,9 @@ return [
     "aboutUs" => [
         "caption" => "O nama",
         "url" => "/o-nama"
+    ],
+    "management" => [
+        "caption" => "Menadžment",
+        "url" => "/rukovodioci"
     ]
 ];

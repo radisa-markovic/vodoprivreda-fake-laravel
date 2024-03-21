@@ -44,13 +44,15 @@
             </a>
         </li>
         <?php foreach($routes as $routeName => $routeValue) :?>
-            <li class="navigation__item">
-                <a href="<?=$routeValue['url']?>"
-                   class="navigation__link <?= urlIsActive($routeValue['url'])? 'active' : $routeValue['url'] ?>"
-                >
-                    <?= $routeValue['caption'] ?>
-                </a>
-            </li>
+            <?php if($routeName !== 'management'): ?>
+                <li class="navigation__item">
+                    <a href="<?=$routeValue['url']?>"
+                    class="navigation__link <?= urlIsActive($routeValue['url'])? 'active' : $routeValue['url'] ?>"
+                    >
+                        <?= $routeValue['caption'] ?>
+                    </a>
+                </li>
+            <?php endif;?>
         <?php endforeach; ?>
     </ul>
 </nav>

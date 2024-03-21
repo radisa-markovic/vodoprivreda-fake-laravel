@@ -2,9 +2,9 @@
 <html lang="en">
 <?php require 'partials/head.php' ?>
 <body>
+    <?php require ('partials/header.php'); ?>    
     <main class="container">
-        <?php require ('partials/Navigation.php'); ?>    
-        <h1>
+        <h1 class="section-title">
             Projekti
         </h1>
         <section class="project__previews">
@@ -13,5 +13,7 @@
             <?php endforeach; ?>
         </section>
     </main>
+
+    <?php require 'partials/footer.php'; ?>
 </body>
 </html>

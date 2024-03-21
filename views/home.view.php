@@ -1,44 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php require 'partials/head.php' ?>
-<style>
-*,
-*::before,
-*::after
-{
-    box-sizing: border-box;  
-    margin: 0;
-    padding: 0;  
-}
-
-.image-container
-{
-    display: block;
-}
-
-.image-container.headline-image > img
-{
-    display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.headline-image,
-.cta-and-description
-{
-    width: 50%;
-    align-self: center;
-}
-
-button
-{
-    border: none;
-}
-</style>
 <body>
+    <?php require ('partials/header.php'); ?>    
     <main class="container" style="margin-bottom: 20px;">
-        <?php require ('partials/Navigation.php'); ?>    
         <div style="display:flex; margin-top: 30px;">
             <div class="cta-and-description">
                 <h1 class="main-title"max-width: 22ch;">
@@ -74,7 +39,7 @@ button
     </main>
     <!--=== TRUSTED BY ===-->
     <section style="background-color: #3A3C75;">
-        <h2 class="container" style="color: white;">
+        <h2 class="container section-title" style="color: white;">
             Veruju nam
         </h2>
         <ul class="partner__list container">
@@ -91,7 +56,7 @@ button
     </section>
     <!-- WHAT WE DO -->
     <section class="what-we-do">
-        <h2 class="container">
+        <h2 class="section-title container">
             Čime se bavimo
         </h2>
         <ul class="what-we-do__list container">
@@ -119,7 +84,7 @@ button
     <!-- OUR PROJECTS -->
     <section class="our-projects container" id="our-projects">
         <div class="section-heading">
-            <h2>Naši projekti</h2>
+            <h2 class="section-title">Naši projekti</h2>
             <a 
                 href="<?= $routes['projects']['url'] ?>"
                 class="brand-button"    
@@ -156,40 +121,12 @@ button
 
     <!-- MEHANIZACIJA -->
     <section class="mechanization container">
-        <h2>Mehanizacija</h2>
+        <h2 class="section-title">Mehanizacija</h2>
 
         <ul class="mechanization__list">
-            <!-- MECHANIZATION ITEM -->
-            <li class="mechanization__item">
-                <div class="image-container">
-                    <img src="../images/mechanization/komercijalno-vozilo-kamion-kiper-3-5t-.jpg" alt="">
-                </div>
-                <span class="mechanization__amount">
-                    10+
-                </span>
-                <p>Kamiona</p>
-            </li>
-            <!-- MECHANIZATION ITEM -->
-            <li class="mechanization__item">
-                <div class="image-container">
-                    <img src="../images/mechanization/komercijalno-vozilo-kamion-kiper-3-5t-.jpg" alt="">
-                </div>
-                <span class="mechanization__amount">
-                    10+
-                </span>
-                <p>Kamiona</p>
-            </li>
-            <!-- MECHANIZATION ITEM -->
-            <li class="mechanization__item">
-                <div class="image-container">
-                    <img src="../images/mechanization/komercijalno-vozilo-kamion-kiper-3-5t-.jpg" alt="">
-                </div>
-                <span class="mechanization__amount">
-                    10+
-                </span>
-                <p>Kamiona</p>
-            </li>
-            <!-- SEE ALL MECHANIZATION -->
+            <?php foreach($mechanization as $mechanizationItem): ?>
+                <?php require 'partials/mechanizationItem.php'; ?>
+            <?php endforeach; ?>
             <li class="mechanization__see-all">
                 <a 
                     href="<?= $routes['mechanization']['url']?>"
@@ -203,7 +140,7 @@ button
 
     <!--=== WHERE WE ARE ===-->
     <section class="where-we-are container">
-        <h2>Gde se nalazimo?</h2>
+        <h2 class="section-title">Gde se nalazimo?</h2>
         <div class="separator">
             <div class="address-holder">
                 <address>

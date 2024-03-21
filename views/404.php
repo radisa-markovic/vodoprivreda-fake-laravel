@@ -2,8 +2,8 @@
 <html lang="en">
 <?php require 'partials/head.php' ?>
 <body>
-    <?php require 'partials/Navigation.php'; ?>
-    <main class="container" style="height: 100vh;">
+    <?php require 'partials/header.php'; ?>
+    <main class="container" style="height: 100vh;display:flex; justify-content:center; align-items: center;">
         <div style="display: flex;flex-direction: column;align-items: center;">
             <p style="font-size: 50px; text-align: center">
                 Stranica nije pronađena
