@@ -6,7 +6,7 @@
 
     <main class="container">
         <h1 class="section-title">
-            O nama
+            O nama <?= $jokojoko ?>
         </h1>
         <div class="image-container">
             <img 

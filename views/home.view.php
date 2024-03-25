@@ -4,9 +4,9 @@
 <body>
     <?php require ('partials/header.php'); ?>    
     <main class="container" style="margin-bottom: 20px;">
-        <div style="display:flex; margin-top: 30px;">
+        <div class="cta-and-headline-image-holder">
             <div class="cta-and-description">
-                <h1 class="main-title"max-width: 22ch;">
+                <h1 class="main-title" name="max-width: 22ch;">
                     Zaštita od vode, 
                     izgradnja i održavanje
                     vodoprivrednih objekata
@@ -102,7 +102,7 @@
     <!-- ISO Standards -->
     <section class="iso-standard">
         <div class="iso-standard__holder container">
-            <h2 class="text--white">
+            <h2 class="iso-standard__title text--white">
                 ISO Standardi
             </h2>
             <ul class="iso-standard__list">

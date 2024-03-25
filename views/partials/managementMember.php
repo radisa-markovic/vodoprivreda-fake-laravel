@@ -3,7 +3,7 @@
         style="width: 50%; margin-right: 10px;"
     >
         <img 
-            src="<?= $managementMember['imageURL']?>" 
+            src="<?= image("about-us") . $managementMember['imageURL']?>" 
             alt=""
         />
     </div>

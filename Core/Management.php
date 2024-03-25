@@ -3,12 +3,19 @@
 namespace Core;
 class Management
 {
+    // public static $imageFolder = image("/about-us");
+
+    // public function __construct()
+    // {
+    //     $this->imageFolder = image("/about-us");
+    // }
+
     private static $management = [
         [
             "id" => "1",
             "name" => "Pera Perić",
             "position" => "Direktor",
-            "imageURL" => "../images/about-us/MILADIN GAVRIC.jpg",
+            "imageURL" => "/MILADIN GAVRIC.jpg",
             "email" => "email@email.com",
             "phoneNumber" => "067-555-555"
         ],

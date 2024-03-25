@@ -6,13 +6,16 @@
         />
     </div>
     <div class="project__preview-content container">
-        <p class="text--brand">
+        <p class="project__location text--brand">
             <?= $project['location']?>
         </p>
-        <h3>
+        <h3 class="project__title">
             <?= $project['title'] ?>
         </h3>
-        <a href="/projects/<?= $project['id'] ?>" class="secondary-button">
+        <a 
+            href="/projects/<?= $project['id'] ?>" 
+            class="secondary-button project__link"
+        >
             Pogledaj više
         </a>
     </div>

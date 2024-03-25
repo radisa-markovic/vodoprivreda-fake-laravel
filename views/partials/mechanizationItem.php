@@ -8,7 +8,7 @@
     <span class="mechanization__quantity">
         <?= $mechanizationItem['quantity'] ?>
     </span>
-    <h2>
+    <h2 class="mechanization__title">
         <?= $mechanizationItem['name'] ?>
     </h2>
 </article>
