@@ -4,6 +4,7 @@ namespace Core;
 class Management
 {
     // public static $imageFolder = image("/about-us");
+    private $imageBasePath = '../images/about-us'; 
 
     // public function __construct()
     // {
@@ -15,7 +16,7 @@ class Management
             "id" => "1",
             "name" => "Pera Perić",
             "position" => "Direktor",
-            "imageURL" => "/MILADIN GAVRIC.jpg",
+            "imageURL" => "../images/about-us/MILADIN GAVRIC.jpg",
             "email" => "email@email.com",
             "phoneNumber" => "067-555-555"
         ],
@@ -31,7 +32,7 @@ class Management
             "id" => "3",
             "name" => "Živko Živković",
             "position" => "Direktor 3",
-            "imageURL" => "../images/about-us/MILADIN GAVRIC.jpg",
+            "imageURL" => "/MILADIN GAVRIC.jpg",
             "email" => "email@email.com",
             "phoneNumber" => "067-555-555"
         ],
