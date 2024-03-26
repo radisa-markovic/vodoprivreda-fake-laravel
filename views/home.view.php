@@ -33,7 +33,7 @@
 
     </main>
     <!--=== TRUSTED BY ===-->
-    <!-- <section style="background-color: #3A3C75;">
+    <section style="background-color: #3A3C75;">
         <h2 class="container section-title" style="color: white;">
             Veruju nam
         </h2>
@@ -48,7 +48,7 @@
                 <img src="../images/SrbijaVode.PNG" alt="">
             </li>
         </ul>
-    </section> -->
+    </section>
     <!-- WHAT WE DO -->
     <!-- <section class="what-we-do">
         <h2 class="section-title container">

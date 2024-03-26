@@ -56,6 +56,7 @@ ul
 .text--white { color: white; } 
 .text--center { text-align: center; }
 .text--bold { font-weight: 700; } 
+.background-color--brand { background-color: var(--brand-color, #3A3C75); }
 
 .brand-button
 {
@@ -417,4 +418,49 @@ ul
 .cta-and-description > *
 {
     margin-top: 5px;
+}
+
+/*===================================*/
+/*       PARTNERS     */
+/*===================================*/
+.partner__list
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partner__item
+{
+    max-width: 330px;
+}
+
+@media screen and (max-width: 650px) 
+{
+    .partner__list
+    {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 649px)
+{
+    .partner__item
+    {
+        max-width: 230px;
+    }
+
+    .section-title
+    {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 949px)
+{
+    .partner__item
+    {
+        max-width: initial;
+    }    
 }
