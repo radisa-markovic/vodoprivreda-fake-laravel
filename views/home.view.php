@@ -2,8 +2,8 @@
 <html lang="en">
 <?php require 'partials/head.php' ?>
 <body>
-    <?php require ('partials/header.php'); ?>    
-    <main class="container" style="margin-bottom: 20px;">
+    <?php require ('partials/header.php'); ?>  
+    <!-- <main class="container" style="margin-bottom: 20px;">
         <div class="cta-and-headline-image-holder">
             <div class="cta-and-description">
                 <h1 class="main-title" name="max-width: 22ch;">
@@ -36,9 +36,9 @@
             </div>
         </div>
 
-    </main>
+    </main> -->
     <!--=== TRUSTED BY ===-->
-    <section style="background-color: #3A3C75;">
+    <!-- <section style="background-color: #3A3C75;">
         <h2 class="container section-title" style="color: white;">
             Veruju nam
         </h2>
@@ -53,9 +53,9 @@
                 <img src="../images/SrbijaVode.PNG" alt="">
             </li>
         </ul>
-    </section>
+    </section> -->
     <!-- WHAT WE DO -->
-    <section class="what-we-do">
+    <!-- <section class="what-we-do">
         <h2 class="section-title container">
             Čime se bavimo
         </h2>
@@ -79,10 +79,10 @@
                 <p>Zaštita vode od zagađenja</p>
             </li>
         </ul>
-    </section>
+    </section> -->
 
     <!-- OUR PROJECTS -->
-    <section class="our-projects container" id="our-projects">
+    <!-- <section class="our-projects container" id="our-projects">
         <div class="section-heading">
             <h2 class="section-title">Naši projekti</h2>
             <a 
@@ -97,10 +97,10 @@
                 <?php include ('partials/projectPreview.php'); ?>
             <?php endforeach; ?>
         </section>  
-    </section>
+    </section> -->
 
     <!-- ISO Standards -->
-    <section class="iso-standard">
+    <!-- <section class="iso-standard">
         <div class="iso-standard__holder container">
             <h2 class="iso-standard__title text--white">
                 ISO Standardi
@@ -117,10 +117,10 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> -->
 
     <!-- MEHANIZACIJA -->
-    <section class="mechanization container">
+    <!-- <section class="mechanization container">
         <h2 class="section-title">Mehanizacija</h2>
 
         <ul class="mechanization__list">
@@ -136,10 +136,10 @@
                 </a>
             </li>
         </ul>
-    </section>
+    </section> -->
 
     <!--=== WHERE WE ARE ===-->
-    <section class="where-we-are container">
+    <!-- <section class="where-we-are container">
         <h2 class="section-title">Gde se nalazimo?</h2>
         <div class="separator">
             <div class="address-holder">
@@ -161,10 +161,10 @@
                 />
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!--=== CONTACT US ===-->
-    <section class="contact-us container">
+    <!-- <section class="contact-us container">
         <h2 class="contact-us-heading">Kontaktirajte nas</h2>
         <div class="separator">
             <ul class="contact__list">
@@ -212,6 +212,6 @@
         </div>
     </section>
 
-    <?php require('partials/footer.php'); ?>
+    <?php require('partials/footer.php'); ?> -->
 </body>
 </html>

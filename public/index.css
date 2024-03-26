@@ -832,3 +832,49 @@ ul { list-style: none; }
         margin-bottom: 0;
     }
 }
+
+@media screen and (min-width: 180px) 
+{
+    .main-title
+    {
+        font-size: 20px;
+    }    
+
+    .secondary-title
+    {
+        font-size: 12px;
+    }
+
+    .cta-and-headline-image-holder
+    {
+        flex-direction: column-reverse;
+    }
+
+    .cta-button
+    {
+        font-size: 10px;
+    }
+
+    .section-title
+    {
+        font-size: 12px;
+    }
+
+    .what-we-do__list
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 300px)
+{
+    .section-heading
+    {
+        flex-direction: row;
+    }    
+
+    .section-heading > a.brand-button 
+    {
+        font-size: 8px;
+    }
+}

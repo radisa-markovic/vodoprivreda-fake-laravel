@@ -5,10 +5,12 @@
             alt="Logo vodoprivrede Ćuprije"
         />
     </div>
-    <p class="logo-minor-title" style="color: black;">
-        Vodoprivredno preduzeće
-    </p>
-    <p class="logo-major-title text--brand text--bold">
-        Ćuprija
-    </p>
+    <div class="logo-content">
+        <p class="logo-minor-title">
+            Vodoprivredno preduzeće
+        </p>
+        <p class="logo-major-title text--brand text--bold">
+            Ćuprija
+        </p>
+    </div>
 </div>

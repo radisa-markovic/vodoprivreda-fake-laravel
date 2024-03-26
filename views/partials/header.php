@@ -1,7 +1,7 @@
 <header class="main-header">
-    <div class="container">
+    <div class="container header-content">
         <input 
-            type="checkbox"
+            type="radio"
             name="hamburgerToggle" 
             id="hamburgerToggle"
         />
@@ -10,6 +10,9 @@
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
         </label>
+        <a href="/">
+            <?php require 'logo.php'?>
+        </a>
         <?php require 'Navigation.php' ?>
     </div>
 </header>
