@@ -3,10 +3,10 @@
 <?php require 'partials/head.php' ?>
 <body>
     <?php require ('partials/header.php'); ?>  
-    <!-- <main class="container" style="margin-bottom: 20px;">
+    <main class="container" style="margin-bottom: 20px;">
         <div class="cta-and-headline-image-holder">
             <div class="cta-and-description">
-                <h1 class="main-title" name="max-width: 22ch;">
+                <h1 class="main-title">
                     Zaštita od vode, 
                     izgradnja i održavanje
                     vodoprivrednih objekata
@@ -14,16 +14,11 @@
                 <p class="secondary-title">
                     Već 70 godina sa vama.
                 </p>
-                <div>
-                    <button 
-                        class="brand-button cta-button" 
-                        style="margin-right: 25px;"
-                    >
+                <div class="two-columns-separator">
+                    <button class="brand-button cta-button">
                         Angažuj nas!
                     </button>
-                    <button
-                        class="secondary-button cta-button" 
-                    >
+                    <button class="secondary-button cta-button">
                         Naši projekti
                     </button>
                 </div>
@@ -36,7 +31,7 @@
             </div>
         </div>
 
-    </main> -->
+    </main>
     <!--=== TRUSTED BY ===-->
     <!-- <section style="background-color: #3A3C75;">
         <h2 class="container section-title" style="color: white;">

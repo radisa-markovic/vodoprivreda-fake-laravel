@@ -10,7 +10,7 @@
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
         </label>
-        <a href="/">
+        <a href="/" class="header-home-link">
             <?php require 'logo.php'?>
         </a>
         <?php require 'Navigation.php' ?>
