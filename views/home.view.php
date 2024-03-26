@@ -50,34 +50,28 @@
         </ul>
     </section>
     <!-- WHAT WE DO -->
-    <!-- <section class="what-we-do">
+    <section class="what-we-do">
         <h2 class="section-title container">
             Čime se bavimo
         </h2>
         <ul class="what-we-do__list container">
             <li class="what-we-do__item">
-                <div class="image-container">
-                    <img src="../images/what-we-do/Izgradnja održavanje rekonstrukcija.PNG" alt="">
-                </div>
+                <i class="fas fa-tint-slash" aria-hidden="true"></i>
                 <p>Zaštita od štetnog dejstva vode</p>
             </li>
             <li class="what-we-do__item">
-                <div class="image-container">
-                    <img src="../images/what-we-do/Zaštita vode od zagađenja.PNG" alt="">
-                </div>
+                <i class="fas fa-hand-holding-water" aria-hidden="true"></i>
                 <p>Izgradnja, rekonstrukcija i održavanje vodoprivrednih objekata</p>
             </li>
             <li class="what-we-do__item">
-                <div class="image-container">
-                    <img src="../images/what-we-do/Izgradnja održavanje rekonstrukcija.PNG" alt="">
-                </div>
+                <i class="fas fa-shield-alt" aria-hidden="true"></i>
                 <p>Zaštita vode od zagađenja</p>
             </li>
         </ul>
-    </section> -->
+    </section>
 
     <!-- OUR PROJECTS -->
-    <!-- <section class="our-projects container" id="our-projects">
+    <section class="our-projects container" id="our-projects">
         <div class="section-heading">
             <h2 class="section-title">Naši projekti</h2>
             <a 
@@ -92,10 +86,10 @@
                 <?php include ('partials/projectPreview.php'); ?>
             <?php endforeach; ?>
         </section>  
-    </section> -->
+    </section>
 
     <!-- ISO Standards -->
-    <!-- <section class="iso-standard">
+    <section class="iso-standard">
         <div class="iso-standard__holder container">
             <h2 class="iso-standard__title text--white">
                 ISO Standardi
@@ -112,10 +106,10 @@
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section>
 
     <!-- MEHANIZACIJA -->
-    <!-- <section class="mechanization container">
+    <section class="mechanization container">
         <h2 class="section-title">Mehanizacija</h2>
 
         <ul class="mechanization__list">
@@ -131,7 +125,7 @@
                 </a>
             </li>
         </ul>
-    </section> -->
+    </section>
 
     <!--=== WHERE WE ARE ===-->
     <!-- <section class="where-we-are container">
@@ -205,8 +199,8 @@
                 </button>
             </form>
         </div>
-    </section>
+    </section>-->
 
-    <?php require('partials/footer.php'); ?> -->
+    <?php require('partials/footer.php'); ?>
 </body>
 </html>
