@@ -128,7 +128,7 @@
     </section>
 
     <!--=== WHERE WE ARE ===-->
-    <!-- <section class="where-we-are container">
+    <section class="where-we-are container">
         <h2 class="section-title">Gde se nalazimo?</h2>
         <div class="separator">
             <div class="address-holder">
@@ -150,17 +150,23 @@
                 />
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!--=== CONTACT US ===-->
-    <!-- <section class="contact-us container">
+    <section class="contact-us container">
         <h2 class="contact-us-heading">Kontaktirajte nas</h2>
         <div class="separator">
             <ul class="contact__list">
                 <li class="contact__item">
                     <span>Kancelarija</span>
-                    <a href="tel:+">+381-555-555</a>
-                    <a href="mailto:">email@email.com</a>
+                    <a href="tel:+">
+                        <i class="fa-solid fa-phone"></i>
+                        +381-555-555
+                    </a>
+                    <a href="mailto:">
+                        <i class="fa-regular fa-envelope"></i>
+                        email@email.com
+                    </a>
                 </li>
             </ul>
             <form 
@@ -199,7 +205,7 @@
                 </button>
             </form>
         </div>
-    </section>-->
+    </section>
 
     <?php require('partials/footer.php'); ?>
 </body>
