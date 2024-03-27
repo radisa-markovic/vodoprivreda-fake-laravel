@@ -877,3 +877,73 @@ footer.footer .logo-holder
         justify-content: space-between;
     }    
 }
+
+/*===================================*/
+/*      ABOUT US     */
+/*===================================*/
+.about-us-info
+{
+    font-size: 20px;
+    line-height: 2;
+}
+
+.about-us-info
+{
+    margin-bottom: 15px;
+}
+
+.about-us__development-path
+{
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.about-us__list
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 21px;
+}
+
+@media screen and (min-width: 550px)
+{
+    .about-us__list
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }    
+}
+
+@media screen and (min-width: 1000px)
+{
+    .about-us__list
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }    
+}
+
+.about-us__managementMember
+{
+    display: flex;
+    box-shadow: 1px 5px 8px gray;
+}
+
+.about-us__managementMember > .image-container
+{
+    width: 40%;
+    margin-right: 10px;
+}
+
+.management-contact-list > *
+{
+    margin-bottom: 10px;
+}
+
+.about-us__management-content
+{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 2.5%;
+    padding-bottom: 10px;
+}

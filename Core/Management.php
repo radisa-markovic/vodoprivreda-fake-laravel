@@ -32,7 +32,7 @@ class Management
             "id" => "3",
             "name" => "Živko Živković",
             "position" => "Direktor 3",
-            "imageURL" => "/MILADIN GAVRIC.jpg",
+            "imageURL" => "../images/about-us/MILADIN GAVRIC.jpg",
             "email" => "email@email.com",
             "phoneNumber" => "067-555-555"
         ],

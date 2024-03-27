@@ -40,7 +40,6 @@ class Router
             case $this->routes['aboutUs']['url']:
                 view('aboutUs.view', [
                     'routes' => $this->routes,
-                    'jokojoko' => image("about-us"),
                     'management' => Management::getManagement() 
                 ]);
                 break;

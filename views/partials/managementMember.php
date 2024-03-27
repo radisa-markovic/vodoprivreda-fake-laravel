@@ -1,9 +1,7 @@
 <li class="about-us__managementMember">
-    <div class="image-container"
-        style="width: 50%; margin-right: 10px;"
-    >
+    <div class="image-container">
         <img 
-            src="<?= image("about-us") . $managementMember['imageURL']?>" 
+            src="<?= $managementMember['imageURL']?>" 
             alt=""
         />
     </div>
@@ -16,11 +14,13 @@
         </h3>
         <ul class="management-contact-list">
             <li>
+                <i class="fa-regular fa-envelope"></i>
                 <a href="mailto:<?= $managementMember['email'] ?>">
                     <?= $managementMember['email'] ?>
                 </a>
             </li>
             <li>
+                <i class="fa-solid fa-phone"></i>
                 <a href="tel:+:<?= $managementMember['phoneNumber'] ?>">
                     <?= $managementMember['phoneNumber'] ?>
                 </a>
@@ -31,7 +31,6 @@
             class="brand-button"
         >
             Vidi biografiju
-            
         </a>
     </div>
 </li>
