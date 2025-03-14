@@ -1,6 +1,11 @@
 <?php
 
 namespace Core;
+use Controllers\EmployeesController;
+use Controllers\MechanizationController;
+use Controllers\ProjectsController;
+use Models\Project;
+use Models\Mechanization;
 
 class Router
 {
@@ -16,39 +21,23 @@ class Router
         switch($url)
         {
             case $this->routes['home']['url']:
-                view('home.view', [
-                    'routes' => $this->routes,
-                    'projects' => Projects::getNProjects(4),
-                    'mechanization' => Mechanization::getNMechanization(3) 
+                view('home', [
+                    'projects' => Project::getAll(),
+                    'mechanization' => Mechanization::getAll() 
                 ]);
                 break;
                 
             case $this->routes['projects']['url']:
-                view('projects.view', [
-                    'routes' => $this->routes,
-                    'projects' => Projects::getProjects()
-                ]);
-                break;
+                return ProjectsController::index();
 
             case $this->routes['mechanization']['url']:
-                view('mechanization.view', [
-                    'routes' => $this->routes,
-                    'mechanization' => Mechanization::getMechanization() 
-                ]);
-                break;
+                return MechanizationController::index();
 
             case $this->routes['aboutUs']['url']:
-                view('aboutUs.view', [
-                    'routes' => $this->routes,
-                    'management' => Management::getManagement() 
-                ]);
-                break;
+                return EmployeesController::index();
 
             default:
-                view('404', [
-                    'routes' => $this->routes
-                ]);
-                break;
+                return view('404');
         }
     }
 }

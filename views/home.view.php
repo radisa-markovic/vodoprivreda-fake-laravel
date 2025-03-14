@@ -25,8 +25,8 @@
             </div>
             <div class="image-container headline-image">
                 <img 
-                    src="../images/14.jpg" 
-                    alt=""
+                    src="../images/14.webp" 
+                    alt="Hero image"
                 />
             </div>
         </div>

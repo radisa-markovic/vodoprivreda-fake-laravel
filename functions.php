@@ -6,7 +6,7 @@ function view($view, $parameters = [])
 {
     extract($parameters);
     // dd(BASE_PATH . "views/$view.php");
-    require BASE_PATH . "/views/$view.php";
+    require BASE_PATH . DIRECTORY_SEPARATOR."views" . DIRECTORY_SEPARATOR . "$view.view.php";
 }
 
 function image($imagePath)

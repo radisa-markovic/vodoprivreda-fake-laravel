@@ -1,3 +1,6 @@
+<?php 
+$routes = require $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . 'routes.php';
+?>
 <nav class="navigation__main">
     <div class="mobile__navigation-header">
         <!-- <?php require 'logo.php'?> -->
